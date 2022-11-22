@@ -10,7 +10,7 @@
 @media (prefers-reduced-motion: no-preference) {
 
 .barra{
-  background-color: greenyellow;
+  background-color: #c999af;
 width: 100%;
 }
 
@@ -27,17 +27,8 @@ object-fit: cover;
 
 
 .card{
-flex-direction: column;
-align-items:center;
-border: 9px black;
-justify-content: center;
-display: flex;
-font-size: calc(10px + 2vmin);
-float:left;
-margin: 10px 20px;
-box-shadow: 0 2px 4px 0 black, 0 3px 10px 0 black;
-width: 25%;
-height: 40%;
+  margin: 10px 20px;
+  box-shadow: 0 2px 4px 0 black, 0 3px 10px 0 black;
 
 }
 
@@ -48,10 +39,3 @@ height: 40%;
   object-fit: cover;
 }
 
-
-.dos{
-height: 50%;
-width: 60%;
-text-align:left;
-object-fit: cover;
-}

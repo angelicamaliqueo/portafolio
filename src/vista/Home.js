@@ -3,23 +3,24 @@ import Navbar from '../componente/Navbar';
 import Card from '../componente/Card';
 import { Context } from "../store/appContext";
 import Navbarcomponente from "../componente/Navbar";
+import ComponenteFooter from "../componente/ComponenteFooter";
+
 
 
 function Home() {
 
-    const { store, actions } = useContext(Context);
+    
 
-    useEffect(() => {
-        actions.getPokemon();
-    }, []);
-    console.log("store", store)
+   
     return (
-        <>
+        <div style={{ backgroundImage: "linear-gradient(#c7f7f7, #cfcecf)" }}>
 
-            <Navbarcomponente />
-            <Card pokemon={store.pokemon} />
-
-        </>
+            <Navbarcomponente/>
+            <div style={{ backgroundImage: "linear-gradient(#c7f7f7, #cfcecf)" }}>
+                <Card/>
+            </div>
+            <ComponenteFooter/>
+        </div>
     );
 }
 
